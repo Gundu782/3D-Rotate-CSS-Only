@@ -1,0 +1,247 @@
+@import url('https://www.dafont.com/css2?family=poppins:wght@400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url("c:/Users/nanaa/Downloads/web.jpg") no-repeat center center;
+    background-size: cover;
+    color: #333;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #chatbox {
+            width: 300px;
+            height: 400px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 0 auto;
+            overflow-y: scroll;
+        }
+        input, button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Simple AI Chatbot</h2>
+    <div id="chatbox"></div>
+    <input type="text" id="userInput" placeholder="Type a message...">
+    <button onclick="sendMessage()">Send</button>
+
+    <script>
+        function sendMessage() {
+            let userText = document.getElementById("userInput").value;
+            if (userText.trim() === "") return;
+            
+            let chatbox = document.getElementById("chatbox");
+            chatbox.innerHTML += "<p><strong>You:</strong> " + userText + "</p>";
+
+            let aiResponse = generateAIResponse(userText);
+            chatbox.innerHTML += "<p><strong>AI:</strong> " + aiResponse + "</p>";
+
+            document.getElementById("userInput").value = "";
+        }
+
+        function generateAIResponse(message) {
+            let responses = {
+                "hello": "Hi there! How can I assist you?",
+                "how are you": "I'm just a chatbot, but I'm here to help!",
+                "bye": "Goodbye! Have a great day!"
+            };
+            return responses[message.toLowerCase()] || "I'm not sure how to respond to that.";
+        }
+    </script>
+</body>
+</html>
+header .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px; /* Add padding for better spacing */
+    border: 2px solid white; /* Add a white border */
+    border-radius: 25px; /* Make the border rounded */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+header .navbar a:hover {
+    background-color: white; /* Change background to white on hover */
+    color: #333; /* Change text color to dark on hover */
+}
+/* Highlighted Text Styling */
+.highlighted-text {
+    font-family: 'Poppins', sans-serif; /* Change to a modern font */
+    color: #007bff; /* Primary blue color */
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Add spacing above */
+}
+/* Middle Section Styling */
+.middle {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    color: #333;
+}
+/* Right Image Styling */
+.right-image {
+    text-align: right; /* Align the image to the right */
+    padding: 20px;
+}
+
+.right-image img {
+    max-width: 300px; /* Adjust the size of the image */
+    height: auto;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+}
+/* Social Media Section Styling */
+.social-media {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-media h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.social-media .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media .icons a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 32px;
+    transition: color 0.3s;
+}
+
+.social-media .icons a:hover {
+    color: #ff9800;
+}
+```css
+/* Contact Info Styling */
+.contact-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.contact-info a {
+    color: #ff9800; /* Highlight links with orange */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    color: #fff; /* Change link color to white on hover */
+    text-decoration: underline;
+}
+
+.middle h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.middle p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+}
+
+header .navbar a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-color: #ff9800;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero .btn {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hero .btn:hover {
+    background-color: #fff;
+    color: #333;
+    border: 1px solid #333;
+}
